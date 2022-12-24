@@ -1,4 +1,4 @@
-# Todo_list Project
+# Todo List Project
 
 > Construindo uma lista de tarefas (Todo List)
 
