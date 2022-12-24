@@ -8,7 +8,7 @@ técnicas de clean code e clean architecture e TDD em uma aplicação de uma lis
 onde o usuário poderá criar uma lista e assim colocar suas atividades, afim de não perder
 o prazo de nenhuma ou se esquecer com o passar do tempo.
 
-## 🛠️ Tecnologias utiilizadas
+## 🛠️ Tecnologias utilizadas
 - Python
 - Git
 - Github
