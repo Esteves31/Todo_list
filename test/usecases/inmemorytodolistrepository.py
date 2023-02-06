@@ -1,5 +1,4 @@
 import copy
-
 from src.usecases.ports.todolistrepository import TodoListRepository
 
 class InMemoryTodoListRepository(TodoListRepository):
@@ -19,9 +18,8 @@ class InMemoryTodoListRepository(TodoListRepository):
           if self.todolists[index].owner.email == user_email:
             self.todolists[index] = newtodolist
 
-    #Função criada para remover a todolist a partir do usuário
-    def remove_todolist_by_email(self, owner):
-        list_size = len(self.list)
-        for index in range(list_size):
-            if self.list[index].user_email == owner:
-                del (self)
+    def remove(self, user_email):
+        for index in range(len(self.todolists)):
+          if self.todolists[index].owner.email == user_email:
+            del self.todolists[index]
+            break
