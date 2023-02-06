@@ -12,3 +12,7 @@ class TodoListRepository(ABC):
     @abstractmethod
     def update(self, user_email, newtodolist):
         raise (NotImplementedError)
+
+    @abstractmethod
+    def remove(self, user_email):
+        raise (NotImplementedError)
